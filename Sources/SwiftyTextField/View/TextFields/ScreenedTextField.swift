@@ -9,11 +9,6 @@ import SwiftUI
 
 public struct ScreenedTextField: View {
 
-    enum ErrorLocation {
-        case top
-        case bottom
-    }
-    
     @Binding var text: String
     @Binding var isValid: Bool // Condition to determine validity
     var errorLocation: ErrorLocation = .bottom

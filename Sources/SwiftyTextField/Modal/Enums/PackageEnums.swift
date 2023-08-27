@@ -23,8 +23,10 @@ public enum ButtonType {
     case text
 }
 
-
-
+internal enum ErrorLocation {
+    case top
+    case bottom
+}
 
 // Internal cases:
 
