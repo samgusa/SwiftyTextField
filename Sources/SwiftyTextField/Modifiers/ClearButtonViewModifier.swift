@@ -46,18 +46,26 @@ private struct ClearButtonViewModifier: ViewModifier {
 }
 
 
-extension View {
-    public func clearTextFieldViewModifier(text: Binding<String>,
+public extension View {
+    func clearTextFieldViewModifier(text: Binding<String>,
                                            buttonType: ButtonType = .image,
                                            buttonImage: String = "xmark.circle.fill",
                                            buttonText: String = "Clear",
                                            onClearHandler: (() -> Void)? = nil) -> some View {
 
-        modifier(ClearButtonViewModifier(text: text,
-                                             buttonType: buttonType,
-                                             buttonImage: buttonImage,
-                                             buttonText: buttonText,
-                                             onClearHandler: onClearHandler))
-    }
+        // Use the internal cases here
+               let internalButtonType: ButtonType
+               switch buttonType {
+                   case .image:
+                       internalButtonType = ButtonType.internalImage
+                   case .text:
+                       internalButtonType = ButtonType.internalText
+               }
 
+        return modifier(ClearButtonViewModifier(text: text,
+                                          buttonType: internalButtonType,
+                                          buttonImage: buttonImage,
+                                          buttonText: buttonText,
+                                          onClearHandler: onClearHandler))
+    }
 }
