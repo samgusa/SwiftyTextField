@@ -28,7 +28,7 @@ enum ErrorLocation {
     case bottom
 }
 
-struct ErrorLocationWrapper {
+public struct ErrorLocationWrapper {
     private let location: ErrorLocation
 
     static var top: ErrorLocationWrapper {
