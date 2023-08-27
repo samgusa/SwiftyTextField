@@ -16,8 +16,28 @@ public struct ScreenedTextField: View {
     var mainColor: Color = .green
     var placeholder: String
     var errorMessage: String // Error message to show if isValid is false
-    var validationHandler: ((String) -> Bool)? = nil
+    var validationHandler: ((String) -> Bool)?
 
+    public init(
+        text: Binding<String>,
+        isValid: Binding<Bool>,
+        errorLocation: ErrorLocation = .bottom,
+        errorColor: Color = .red,
+        mainColor: Color = .green,
+        placeholder: String,
+        errorMesage: String,
+        validationHandler: ((String) -> Bool)? = nil) {
+            
+            self._text = text
+            self._isValid = isValid
+            self.errorLocation = errorLocation
+            self.errorColor = errorColor
+            self.mainColor = mainColor
+            self.placeholder = placeholder
+            self.errorMessage = errorMesage
+            self.validationHandler = validationHandler
+        }
+    
     public var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             if errorLocation == .top && !$isValid.wrappedValue {

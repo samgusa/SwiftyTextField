@@ -13,6 +13,13 @@ public struct HideSeeTextField: View {
     var titleKey: String
     var foregroundColor: Color = .gray
 
+    public init(text: Binding<String>, isSecure: Bool = true, titleKey: String, foregroundColor: Color = .gray) {
+        self._text = text
+        self._isSecure = State(initialValue: isSecure)
+        self.titleKey = titleKey
+        self.foregroundColor = foregroundColor
+    }
+
     public var body: some View {
         HStack {
             Group {

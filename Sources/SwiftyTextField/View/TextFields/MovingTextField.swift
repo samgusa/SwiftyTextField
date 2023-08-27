@@ -19,15 +19,14 @@ public struct MovingTextField: View {
     @Binding var value: String
     @Namespace private var animation
 
-    public enum ImageLocation {
-        case left
-        case right
-    }
-
-    public enum TextFieldType {
-        case normal
-        case secure
-        case phoneNumber
+    public init(image: String, title: String, textFieldType: TextFieldType = .normal, imageLocation: ImageLocation = .left, restColor: Color = .gray, activeColor: Color = .primary, value: Binding<String>) {
+        self.image = image
+        self.title = title
+        self.textFieldType = textFieldType
+        self.imageLocation = imageLocation
+        self.restColor = restColor
+        self.activeColor = activeColor
+        self._value = value
     }
 
     public var body: some View {
