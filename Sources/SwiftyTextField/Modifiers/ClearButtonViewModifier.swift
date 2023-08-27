@@ -47,11 +47,11 @@ private struct ClearButtonViewModifier: ViewModifier {
 
 
 extension View {
-    func ClearTextFieldViewModifier(text: Binding<String>,
-                              buttonType: ButtonType = .image,
-                              buttonImage: String = "xmark.circle.fill",
-                              buttonText: String = "Clear",
-                              onClearHandler: (() -> Void)? = nil) -> some View {
+    public func clearTextFieldViewModifier(text: Binding<String>,
+                                           buttonType: ButtonType = .image,
+                                           buttonImage: String = "xmark.circle.fill",
+                                           buttonText: String = "Clear",
+                                           onClearHandler: (() -> Void)? = nil) -> some View {
 
         modifier(ClearButtonViewModifier(text: text,
                                              buttonType: buttonType,
@@ -59,4 +59,5 @@ extension View {
                                              buttonText: buttonText,
                                              onClearHandler: onClearHandler))
     }
+
 }

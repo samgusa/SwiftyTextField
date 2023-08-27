@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ScreenedTextField: View {
+public struct ScreenedTextField: View {
     @Binding var text: String
     @Binding var isValid: Bool // Condition to determine validity
     var errorLocation: ErrorLocation = .bottom
@@ -17,7 +17,7 @@ struct ScreenedTextField: View {
     var errorMessage: String // Error message to show if isValid is false
     var validationHandler: ((String) -> Bool)? = nil
 
-    var body: some View {
+    public var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             if errorLocation == .top && !$isValid.wrappedValue {
                 Text(errorMessage)

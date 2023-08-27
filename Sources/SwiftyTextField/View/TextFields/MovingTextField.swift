@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MovingTextField: View {
+public struct MovingTextField: View {
 
     // Fields
     var image: String
@@ -19,7 +19,7 @@ struct MovingTextField: View {
     @Binding var value: String
     @Namespace private var animation
 
-    var body: some View {
+    public var body: some View {
         VStack(spacing: 6) {
             HStack(alignment: .bottom) {
                 if imageLocation == .left {

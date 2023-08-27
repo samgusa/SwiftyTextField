@@ -8,20 +8,26 @@
 import Foundation
 import SwiftUI
 
-enum TextFieldType {
+internal enum TextFieldType {
     case normal
     case secure
     case phoneNumber
 }
-enum ImageLocation {
+internal enum ImageLocation {
     case left
     case right
 }
-enum ButtonType {
+
+public protocol ButtonTypeProtocol {
+    // Define any required properties or methods here
+    // ...
+}
+
+public enum ButtonType {
     case image
     case text
 }
-enum ErrorLocation {
+internal enum ErrorLocation {
     case top
     case bottom
 }

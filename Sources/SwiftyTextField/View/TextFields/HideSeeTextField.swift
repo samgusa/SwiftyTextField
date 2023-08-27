@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct HideSeeTextField: View {
+public struct HideSeeTextField: View {
     @Binding var text: String
     @State var isSecure: Bool = true
     var titleKey: String
     var foregroundColor: Color = .gray
 
-    var body: some View {
+    public var body: some View {
         HStack {
             Group {
                 if isSecure {
