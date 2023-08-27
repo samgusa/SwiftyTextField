@@ -23,10 +23,30 @@ public enum ButtonType {
     case text
 }
 
-internal enum ErrorLocation {
+enum ErrorLocation {
     case top
     case bottom
 }
+
+struct ErrorLocationWrapper {
+    private let location: ErrorLocation
+
+    static var top: ErrorLocationWrapper {
+        return ErrorLocationWrapper(location: .top)
+    }
+
+    static var bottom: ErrorLocationWrapper {
+        return ErrorLocationWrapper(location: .bottom)
+    }
+
+    // Additional methods and properties to enhance usability
+    // ...
+
+    static func == (lhs: ErrorLocationWrapper, rhs: ErrorLocation) -> Bool {
+        return lhs.location == rhs
+    }
+}
+
 
 // Internal cases:
 
