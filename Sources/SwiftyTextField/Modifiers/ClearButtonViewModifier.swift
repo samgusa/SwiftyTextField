@@ -9,13 +9,15 @@ import SwiftUI
 
 private struct ClearButtonViewModifier: ViewModifier {
 
-    /// to determine whether or not we show the clear button.
     @Binding var text: String
+
+    // Button appearance customization
     var buttonType: ButtonType = .image
     var buttonImage: String = "xmark.circle.fill"
     var buttonText: String = "Clear"
-    /// An optional clear handler to perform additional actions
-    /// when the text is cleared.
+    var forgroundColor: Color = Color(.placeholderText)
+    
+    // Clear handling
     var onClearHandler: (() -> Void)? = nil
 
     public func body(content: Content) -> some View {
@@ -35,7 +37,7 @@ private struct ClearButtonViewModifier: ViewModifier {
                         Text(buttonText)
                     }
                 }
-                .foregroundColor(Color(.placeholderText))
+                .foregroundColor(forgroundColor)
                 .padding(.trailing, 10)
                 .buttonStyle(.plain)
             }
