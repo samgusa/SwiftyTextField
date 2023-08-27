@@ -11,7 +11,7 @@ public struct ScreenedTextField: View {
 
     @Binding var text: String
     @Binding var isValid: Bool // Condition to determine validity
-    var errorLocation: ErrorLocationWrapper = .bottom
+    var errorLocation: ErrorLocation = .bottom
     var errorColor: Color = .red
     var mainColor: Color = .green
     var placeholder: String

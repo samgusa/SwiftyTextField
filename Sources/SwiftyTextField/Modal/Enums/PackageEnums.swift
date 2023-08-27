@@ -8,48 +8,33 @@
 import Foundation
 import SwiftUI
 
+/// This enum represents TextField types. It's not recommended to subclass or override it.
 public enum TextFieldType {
     case normal
     case secure
     case phoneNumber
 }
+
+/// This enum represents image location settings. It's not recommended to subclass or override it.
 public enum ImageLocation {
     case left
     case right
 }
 
+/// This enum represents button types settings. It's not recommended to subclass or override it.
 public enum ButtonType {
     case image
     case text
 }
 
-enum ErrorLocation {
+/// This enum represents error location settings. It's not recommended to subclass or override it.
+public enum ErrorLocation {
     case top
     case bottom
 }
 
-public struct ErrorLocationWrapper {
-    private let location: ErrorLocation
-
-    static var top: ErrorLocationWrapper {
-        return ErrorLocationWrapper(location: .top)
-    }
-
-    static var bottom: ErrorLocationWrapper {
-        return ErrorLocationWrapper(location: .bottom)
-    }
-
-    // Additional methods and properties to enhance usability
-    // ...
-
-    static func == (lhs: ErrorLocationWrapper, rhs: ErrorLocation) -> Bool {
-        return lhs.location == rhs
-    }
-}
-
 
 // Internal cases:
-
 internal extension ButtonType {
     static var internalImage: ButtonType {
         .image
