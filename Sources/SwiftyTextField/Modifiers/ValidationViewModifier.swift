@@ -37,8 +37,8 @@ private struct ValidationViewModifier: ViewModifier {
     }
 }
 
-extension View {
-    public func validationModifier(isButtonPressed: Binding<Bool>, text: Binding<String>, isInputValid: Bool) -> some View {
+public extension View {
+    func validationModifier(isButtonPressed: Binding<Bool>, text: Binding<String>, isInputValid: Bool) -> some View {
         self.modifier(ValidationViewModifier(text: text, isInputValid: isInputValid, isButtonPressed: isButtonPressed))
         }
 }
