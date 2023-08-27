@@ -19,6 +19,17 @@ public struct MovingTextField: View {
     @Binding var value: String
     @Namespace private var animation
 
+    public enum ImageLocation {
+        case left
+        case right
+    }
+
+    public enum TextFieldType {
+        case normal
+        case secure
+        case phoneNumber
+    }
+
     public var body: some View {
         VStack(spacing: 6) {
             HStack(alignment: .bottom) {
