@@ -23,5 +23,14 @@ There are a 5 different Textfields that can be used with **SwiftyTextField**, in
 
 There are a 5 different Textfields that can be used with **SwiftyTextField**, in 2 different categories: CustomViews and ViewModifiers
 
+### CustomViews:
+
+* **HideSeeTextView** - A SecureField that has a closed eye button that when pressed reveals the text in a SecureField
+
+* **MovingTextField** - 
+
+* **ScreenedTextField** - 
+
+
 
 
