@@ -40,7 +40,30 @@ There are a 5 different Textfields that can be used with **SwiftyTextField**, in
   * activeColor: Optional. The color of the image and placeholder when there is text in the TextField.
   * value: Required. The Binding for the text of the TextField. 
 
-* **ScreenedTextField** - 
+* **ScreenedTextField** - A Textfield that looks like there is a colored screen over the TextField
+  * text: Required. The Binding for the text of the TextField.
+  * isValid: Required: The Binding for determining the validity of the TextField. Start off as True.
+  * errorLocation: Optional. The location for the error text. **top** for the top of the TextField, and **bottom** for the bottom of the TextField.
+  * errorColor: Optional. The color that the TextField turns into when there is an error.
+  * mainColor: Optional. The main color of the TextField, until there is an error.
+  * placeholder: Required. The placeholder text for the TextField
+  * errorMessage: Required. The error message that appears along with the color change of the TextField.
+ 
+### View Modifiers:
+
+* **clearTextFieldViewModifier** - a clear button that is at the end of a TextField or SecureField. When there is no text the button disappears.
+  * text: Required. The Binding text for the TextField.
+  * buttonType: Optional. The button to clear the text of the TextField can be either **image** or **text**.
+  * buttonImage: Optional. The systemImage for the image buttonType.
+  * buttonText: Optional. The text for the button as a text buttontype
+  * foregroundColor: Optional. The foregroundColor for the TextField and button.
+  * onClearHandler: Optional. For any extra logic when the clear button is pressed
+ 
+* **validationModifier** - An image that shows up when a condition is triggered. Has 2 animated images, a check and a cross.
+  * text. Required. The Binding text for the TextField
+  * isInputValue: Required. The Bool used for determining the different validation image that will appear at the end of the TextField.
+  * frameHeight: Optional. CGFloat. The size of the validation image.
+  * isButtonPressed: Required. The Bool to determine when the validation image appears. Not the same as isInputValue
 
 
 
