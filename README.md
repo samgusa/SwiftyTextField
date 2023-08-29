@@ -75,5 +75,14 @@ There are a 5 different Textfields that can be used with **SwiftyTextField**, in
   * isButtonPressed: Required. The Bool to determine when the validation image appears. Not the same as isInputValue 
 
 
+<a name="Installation"></a>
+## Installation
 
+**Swift Package Manager** (Xcode 11 and above)
+
+1. Select **File** > **Swift Packages** > **Add Package Dependency…** from the **File** menu.
+2. Paste `https://github.com/Appracatappra/CircularProgressGauge.git` in the dialog box.
+3. Follow the Xcode's instruction to complete the installation.
+
+Only supports Swift Package Manager at this time. 
 
