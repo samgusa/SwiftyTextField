@@ -9,13 +9,13 @@ import SwiftUI
 
 public struct HideSeeTextField: View {
     @Binding var text: String
-    @State var isSecure: Bool = true
+    @State private var isSecure: Bool = true
     var titleKey: String
     var foregroundColor: Color = .gray
 
-    public init(text: Binding<String>, isSecure: Bool = true, titleKey: String, foregroundColor: Color = .gray) {
+    public init(text: Binding<String>, titleKey: String, foregroundColor: Color = .gray) {
         self._text = text
-        self._isSecure = State(initialValue: isSecure)
+        //self._isSecure = State(initialValue: isSecure)
         self.titleKey = titleKey
         self.foregroundColor = foregroundColor
     }
