@@ -12,10 +12,10 @@ private struct ClearButtonViewModifier: ViewModifier {
     @Binding var text: String
 
     // Button appearance customization
-    var buttonType: ButtonType = .image
+    var buttonType: ButtonType
     var buttonImage: String = "xmark.circle.fill"
     var buttonText: String = "Clear"
-    var forgroundColor: Color = Color(.placeholderText)
+    var forgroundColor: Color
     
     // Clear handling
     var onClearHandler: (() -> Void)? = nil
@@ -53,7 +53,8 @@ public extension View {
                                            buttonType: ButtonType = .image,
                                            buttonImage: String = "xmark.circle.fill",
                                            buttonText: String = "Clear",
-                                           onClearHandler: (() -> Void)? = nil) -> some View {
+                                           foregroundColor: Color = Color(.placeholderText),
+                                           onClearHandler:  (() -> Void)? = nil) -> some View {
 
         // Use the internal cases here
                let internalButtonType: ButtonType
@@ -68,6 +69,7 @@ public extension View {
                                           buttonType: internalButtonType,
                                           buttonImage: buttonImage,
                                           buttonText: buttonText,
+                                          forgroundColor: foregroundColor,
                                           onClearHandler: onClearHandler))
     }
 }
