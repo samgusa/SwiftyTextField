@@ -5,7 +5,13 @@
 
 **SwiftyTextField** is a series of TextFields created in SwiftUI.
 
-There are a 5 different Textfields that can be used with **SwiftyTextField**, in 2 different categories: CustomViews and ViewModifiers
+Visually appealing and interactive TextFields, each with a different design and ease of use. 
+
+Whether you're designing a modern login screen, a stylish user profile form, or a captivating sign-up page, **SwiftyTextField** empowers you to elevate any user experience with a collection of 3 different Textfields and 2 different ViewModifiers.
+
+Using modern Swift design and animation **SwiftyTextField** offers a fine-tuned appearance and behavior for your TextFields, and SecureFields to help any app's aesthetic. Each TextField and ViewModifier is totally customizable to your preferrences, and some **SwiftyTextField** modifiers and TextFields can be combined.
+
+Explore the possibilities and unleash your creativity with **SwiftyTextField**. Elevate your app's user interface to the next level, with stunning TextFields that leave a lasting impression.
 
 <img height="300" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/5395734d-a8e4-4e7f-92a2-420e460ab640">
 &nbsp;&nbsp;&nbsp
@@ -17,6 +23,18 @@ There are a 5 different Textfields that can be used with **SwiftyTextField**, in
 &nbsp;&nbsp;&nbsp
 <img height="300" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/440c10d4-2654-4265-9379-733d96b88583">
 &nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp
+
+
+<a name="Installation"></a>
+## Installation
+
+**Swift Package Manager** (Xcode 11 and above)
+
+1. Select **File** > **Swift Packages** > **Add Package Dependency…** from the **File** menu.
+2. Paste `https://github.com/samgusa/SwiftyTextField.git` in the dialog box.
+3. Follow the Xcode's instruction to complete the installation.
+
+Only supports Swift Package Manager at this time. 
 
 
 ## CustomViews 
@@ -76,18 +94,6 @@ There are a 5 different Textfields that can be used with **SwiftyTextField**, in
   * showValidImage: Required. The Bool used for determining the different validation image that will appear at the end of the TextField.
   * frameHeight: Optional. CGFloat. The size of the validation image. Default value is **28**.
   * showImage: Required. The Bool to determine when the validation image appears. Not the same as showValidImage.
-
-
-<a name="Installation"></a>
-## Installation
-
-**Swift Package Manager** (Xcode 11 and above)
-
-1. Select **File** > **Swift Packages** > **Add Package Dependency…** from the **File** menu.
-2. Paste `https://github.com/samgusa/SwiftyTextField.git` in the dialog box.
-3. Follow the Xcode's instruction to complete the installation.
-
-Only supports Swift Package Manager at this time. 
 
 
 ## Using SwiftyTextField
