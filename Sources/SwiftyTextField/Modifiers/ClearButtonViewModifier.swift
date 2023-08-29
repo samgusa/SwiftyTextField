@@ -32,7 +32,7 @@ private struct ClearButtonViewModifier: ViewModifier {
                     onClearHandler?()
                 } label: {
                     if buttonType == .image {
-                        Image(systemName: "xmark.circle.fill")
+                        Image(systemName: buttonImage)
                     } else {
                         Text(buttonText)
                     }
