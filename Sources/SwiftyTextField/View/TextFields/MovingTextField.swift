@@ -51,6 +51,7 @@ public struct MovingTextField: View {
                         Text(placeholder)
                             .font(.caption)
                             .fontWeight(.heavy)
+                            .foregroundColor(activeColor)
                             .matchedGeometryEffect(id: placeholder, in: animation)
                     }
 
