@@ -37,7 +37,7 @@ Explore the possibilities and unleash your creativity with **SwiftyTextField**. 
 Only supports Swift Package Manager at this time. 
 
 
-## CustomViews 
+## Usage 
 
 There are a 5 different Textfields that can be used with **SwiftyTextField**, in 2 different categories: CustomViews and ViewModifiers, with different parameters for each of them
 
@@ -99,7 +99,27 @@ There are a 5 different Textfields that can be used with **SwiftyTextField**, in
 ## Using SwiftyTextField
 
 ```swift
-
-
+HideSeeTextField(text: $globalText, placeholder: "Enter", foregroundColor: .red)
+                    .padding([.horizontal, .bottom, .top])
 ```
+<img width="340" alt="Screenshot 2023-08-29 at 5 28 54 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/5235f095-2e6a-4142-8cda-f205109e4dd4"> 
+<img width="345" alt="Screenshot 2023-08-29 at 5 50 28 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/269c4942-5f11-4ebe-9acb-27bab72ba481">
+
+```swift
+MovingTextField(image: "envelope",
+                placeholder: "Email",
+                textFieldType: .phoneNumber,
+                restColor: .blue,
+                activeColor: .red,
+                text: $globalText
+```
+<img width="343" alt="Screenshot 2023-08-29 at 5 47 56 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/117447b9-84dc-4735-8d14-ef0fd3fbda8b">
+<img width="337" alt="Screenshot 2023-08-29 at 5 48 12 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/cdfb47c0-efcc-4319-aada-03e403ec14e6">
+
+
+
+
+
+
+
 
