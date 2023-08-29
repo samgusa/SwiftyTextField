@@ -34,8 +34,12 @@ There are a 5 different Textfields that can be used with **SwiftyTextField**, in
 * **MovingTextField** - A Custom TextField that has moving placeholder text when the you start typing.
   * image: Required. Choose a systemImage for the image
   * title: Required. The text for any TextField
-  * textFieldType: Optional. Uses 3 different types of textfield. **normal** - a normal TextField. **secure** - a SecureField, **phoneNumber** - a phoneNumber keyboard
-  * imageLocation: Optional. The location of the image on the TextField, totally up to your preference. **left** or **right** of the TextField
+  * textFieldType: Optional. Uses 3 different types of textfield.
+    * **normal** - a normal TextField.
+    * **secure** - a SecureField,
+    * **phoneNumber** - a phoneNumber keyboard
+  * imageLocation: Optional. The location of the image on the TextField, totally up to your preference.
+    * **left** or **right** of the TextField
   * restColor: Optional. The color of the image and placeholder when there is no text in the TextField.
   * activeColor: Optional. The color of the image and placeholder when there is text in the TextField.
   * value: Required. The Binding for the text of the TextField. 
@@ -43,7 +47,9 @@ There are a 5 different Textfields that can be used with **SwiftyTextField**, in
 * **ScreenedTextField** - A Textfield that looks like there is a colored screen over the TextField
   * text: Required. The Binding for the text of the TextField.
   * isValid: Required: The Binding for determining the validity of the TextField. Start off as True.
-  * errorLocation: Optional. The location for the error text. **top** for the top of the TextField, and **bottom** for the bottom of the TextField.
+  * errorLocation: Optional. The location for the error text.
+    * **top** for the top of the TextField.
+    * **bottom** for the bottom of the TextField.
   * errorColor: Optional. The color that the TextField turns into when there is an error.
   * mainColor: Optional. The main color of the TextField, until there is an error.
   * placeholder: Required. The placeholder text for the TextField
@@ -53,7 +59,8 @@ There are a 5 different Textfields that can be used with **SwiftyTextField**, in
 
 * **clearTextFieldViewModifier** - a clear button that is at the end of a TextField or SecureField. When there is no text the button disappears.
   * text: Required. The Binding text for the TextField.
-  * buttonType: Optional. The button to clear the text of the TextField can be either **image** or **text**.
+  * buttonType: Optional. The button to clear the text of the TextField can be either:
+    * **image** or **text**.
   * buttonImage: Optional. The systemImage for the image buttonType.
   * buttonText: Optional. The text for the button as a text buttontype
   * foregroundColor: Optional. The foregroundColor for the TextField and button.
