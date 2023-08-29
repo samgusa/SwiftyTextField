@@ -39,7 +39,8 @@ There are a 5 different Textfields that can be used with **SwiftyTextField**, in
     * **secure** - a SecureField,
     * **phoneNumber** - a phoneNumber keyboard
   * imageLocation: Optional. The location of the image on the TextField, totally up to your preference.
-    * **left** or **right** of the TextField
+    * **left** of the TextField
+    * **right** of the TextField
   * restColor: Optional. The color of the image and placeholder when there is no text in the TextField.
   * activeColor: Optional. The color of the image and placeholder when there is text in the TextField.
   * value: Required. The Binding for the text of the TextField. 
@@ -60,7 +61,8 @@ There are a 5 different Textfields that can be used with **SwiftyTextField**, in
 * **clearTextFieldViewModifier** - a clear button that is at the end of a TextField or SecureField. When there is no text the button disappears.
   * text: Required. The Binding text for the TextField.
   * buttonType: Optional. The button to clear the text of the TextField can be either:
-    * **image** or **text**.
+    * **image** - A systemImage for the image
+    * **text**. - Instead of an image, ir is text
   * buttonImage: Optional. The systemImage for the image buttonType.
   * buttonText: Optional. The text for the button as a text buttontype
   * foregroundColor: Optional. The foregroundColor for the TextField and button.
