@@ -21,13 +21,24 @@ There are a 5 different Textfields that can be used with **SwiftyTextField**, in
 
 ## CustomViews 
 
-There are a 5 different Textfields that can be used with **SwiftyTextField**, in 2 different categories: CustomViews and ViewModifiers
+There are a 5 different Textfields that can be used with **SwiftyTextField**, in 2 different categories: CustomViews and ViewModifiers, with different parameters for each of them
 
 ### CustomViews:
 
-* **HideSeeTextView** - A SecureField that has a closed eye button that when pressed reveals the text in a SecureField
+* **HideSeeTextView** - A SecureField that has a closed eye button that when pressed reveals the text in a SecureField:
+  * text: Required. Used for the text in the SecureField
+  * isSecure: Not required. Don't need to use this
+  * titleKey: The placeholder text for the SecureField
+  * foregroundColor: In the spirit of SwiftyTextField, the color of the text and eye button is customizable.
 
-* **MovingTextField** - 
+* **MovingTextField** - A Custom TextField that has moving placeholder text when the you start typing.
+  * image: Required. Choose a systemImage for the image
+  * title: Required. The text for any TextField
+  * textFieldType: Optional. Uses 3 different types of textfield. **normal** - a normal TextField. **secure** - a SecureField, **phoneNumber** - a phoneNumber keyboard
+  * imageLocation: Optional. The location of the image on the TextField, totally up to your preference. **left** or **right** of the TextField
+  * restColor: Optional. The color of the image and placeholder when there is no text in the TextField.
+  * activeColor: Optional. The color of the image and placeholder when there is text in the TextField.
+  * value: Required. The Binding for the text of the TextField. 
 
 * **ScreenedTextField** - 
 
