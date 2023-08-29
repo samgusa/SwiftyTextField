@@ -72,7 +72,7 @@ There are a 5 different Textfields that can be used with **SwiftyTextField**, in
   * text. Required. The Binding text for the TextField
   * isInputValue: Required. The Bool used for determining the different validation image that will appear at the end of the TextField.
   * frameHeight: Optional. CGFloat. The size of the validation image.
-  * isButtonPressed: Required. The Bool to determine when the validation image appears. Not the same as isInputValue
+  * isButtonPressed: Required. The Bool to determine when the validation image appears. Not the same as isInputValue 
 
 
 
