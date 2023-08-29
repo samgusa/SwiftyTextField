@@ -41,7 +41,7 @@ There are a 5 different Textfields that can be used with **SwiftyTextField**, in
     * **left** of the TextField. **Default value**.
     * **right** of the TextField
   * restColor: Optional. The color of the image and placeholder when there is no text in the TextField. Default value is .gray.
-  * activeColor: Optional. The color of the image and placeholder when there is text in the TextField. Default value is .primary.
+  * activeColor: Optional. The color of the image and text when there is text in the TextField. Default value is .primary.
   * text: Required. The Binding for the text of the TextField. 
 
 * **ScreenedTextField** - A Textfield that looks like there is a colored screen over the TextField

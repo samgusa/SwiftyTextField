@@ -64,8 +64,10 @@ public struct MovingTextField: View {
                         }
                         if textFieldType == .secure {
                             SecureField("", text: $text)
+                                .foregroundColor(activeColor)
                         } else {
                             TextField("", text: $text)
+                                .foregroundColor(activeColor)
                                 .keyboardType(textFieldType == .phoneNumber ? .numberPad : .default)
                         }
                     }
@@ -80,6 +82,9 @@ public struct MovingTextField: View {
             }
             if text == "" {
                 Divider()
+                    .overlay {
+                        text == "" ? restColor : activeColor
+                    }
             }
         }
         .cornerRadius(8)
