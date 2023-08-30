@@ -196,9 +196,9 @@ TextField("Enter Text", text: $globalText)
 
 ## FAQ
 
-# There are enums that are used for the TextFields. They are named: TextFieldType, ImageLocation, ButtonType, ErrorLocation. Please don't override or modify these enums. There is no need. 
+* There are enums that are used for the TextFields. They are named: TextFieldType, ImageLocation, ButtonType, ErrorLocation. Please don't override or modify these enums. There is no need. 
 
-# These are all customizable, so there is no basic padding on most of the TextFields.
+* These are all customizable, so there is no basic padding on most of the TextFields.
 
 
 ## Contribute
