@@ -202,6 +202,42 @@ TextField("Enter Text", text: $globalText)
 <img width="345" alt="Screenshot 2023-08-29 at 9 00 53 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/3f9dd76b-30b5-4dbb-bfea-f26375d88a79">
 <img width="336" alt="Screenshot 2023-08-29 at 9 01 14 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/42c6d5f0-4d20-48e0-8941-7cef79a9bb22">
 
+## FAQ
+
+# There are enums that are used for the TextFields. They are named: TextFieldType, ImageLocation, ButtonType, ErrorLocation. Please don't override or modify these enums. There is no need. 
+
+# These are all customizable, so there is no basic padding on most of the TextFields.
 
 
+## Contribute
+
+You are welcome to make any contributions, or bring about new ideas.
+
+## License
+
+```
+SwiftyTextField
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+Have fun.
+```
+
+Enjoy
 
