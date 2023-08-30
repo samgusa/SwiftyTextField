@@ -145,14 +145,10 @@ ScreenedTextField(text: $globalText,
 
 //Customized
 
-ScreenedTextField(text: $globalText,
-                                  isValid: $isValid2,
-                                  errorLocation: .top,
-                                  textFieldType: .phoneNumber,
-                                  errorColor: .blue,
-                                  mainColor: .yellow,
-                                  placeholder: "Enter Text Here",
-                                  errorMesage: "Error: Please try again")
+ScreenedTextField(text: $globalText, isValid: $isValid2,
+                  errorLocation: .top, textFieldType: .phoneNumber,
+                  errorColor: .blue, mainColor: .yellow,
+                  placeholder: "Enter Text Here", errorMesage: "Error: Please try again")
                     .padding([.horizontal, .top, .bottom])
 ```
 <img width="345" alt="Screenshot 2023-08-29 at 9 12 46 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/b451976c-1267-47c0-8786-3dfb5bc7cb5c">
@@ -174,12 +170,8 @@ TextField("Enter Text", text: $globalText)
 // Customized
 
 TextField("Enter Text", text: $globalText)
-                    .clearTextFieldViewModifier(text: $globalText,
-                                                buttonType: .image,
-                                                buttonImage: "xmark", 
-                                                buttonText: "Delete",
-                                                foregroundColor: .red,
-                                                onClearHandler: {
+                    .clearTextFieldViewModifier(text: $globalText, buttonType: .image,
+                                                buttonImage: "xmark", buttonText: "Delete", foregroundColor: .red, onClearHandler: {
                         print("Cleared")
                     })
                     .padding(5)
