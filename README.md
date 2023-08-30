@@ -99,13 +99,27 @@ There are a 5 different Textfields that can be used with **SwiftyTextField**, in
 ## Using SwiftyTextField
 
 ```swift
+
+// Basic
+HideSeeTextField(text: $globalText, placeholder: "Enter")
+                    .padding([.horizontal, .bottom, .top])
+
+// Customized
 HideSeeTextField(text: $globalText, placeholder: "Enter", foregroundColor: .red)
                     .padding([.horizontal, .bottom, .top])
 ```
+<img width="336" alt="Screenshot 2023-08-29 at 9 07 28 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/3d589bce-f267-4eb6-a6b7-4a9439f94474">
+<img width="338" alt="Screenshot 2023-08-29 at 9 07 35 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/869f6be6-0698-44ba-8b22-79dc1cdeca5c">
 <img width="340" alt="Screenshot 2023-08-29 at 5 28 54 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/5235f095-2e6a-4142-8cda-f205109e4dd4"> 
 <img width="345" alt="Screenshot 2023-08-29 at 5 50 28 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/269c4942-5f11-4ebe-9acb-27bab72ba481">
 
 ```swift
+
+// Basic
+MovingTextField(image: "envelope", placeholder: "Email", text: $globalText)
+
+// Customize
+
 MovingTextField(image: "envelope",
                 placeholder: "Email",
                 textFieldType: .phoneNumber,
@@ -113,12 +127,80 @@ MovingTextField(image: "envelope",
                 activeColor: .red,
                 text: $globalText
 ```
+<img width="345" alt="Screenshot 2023-08-29 at 9 09 45 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/d919c8a6-9efe-4c17-9e26-64235ac96287">
+<img width="338" alt="Screenshot 2023-08-29 at 9 09 32 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/7cd6de5e-5dfd-46a6-9938-0519bca4a930">
 <img width="343" alt="Screenshot 2023-08-29 at 5 47 56 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/117447b9-84dc-4735-8d14-ef0fd3fbda8b">
 <img width="337" alt="Screenshot 2023-08-29 at 5 48 12 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/cdfb47c0-efcc-4319-aada-03e403ec14e6">
 
 
+```swift
+
+// Basic
+
+ScreenedTextField(text: $globalText,
+                                  isValid: $isValid2,
+                                  placeholder: "Enter Text Here",
+                                  errorMesage: "Error: Please try again")
+                    .padding([.horizontal, .top, .bottom])
+
+//Customized
+
+ScreenedTextField(text: $globalText,
+                                  isValid: $isValid2,
+                                  errorLocation: .top,
+                                  textFieldType: .phoneNumber,
+                                  errorColor: .blue,
+                                  mainColor: .yellow,
+                                  placeholder: "Enter Text Here",
+                                  errorMesage: "Error: Please try again")
+                    .padding([.horizontal, .top, .bottom])
+```
+<img width="345" alt="Screenshot 2023-08-29 at 9 12 46 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/b451976c-1267-47c0-8786-3dfb5bc7cb5c">
+<img width="343" alt="Screenshot 2023-08-29 at 9 12 59 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/d58428fb-6ffc-4889-be04-9776c68937c6">
+<img width="342" alt="Screenshot 2023-08-29 at 8 54 47 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/33ee4bcd-8964-427e-803c-cfd6dd24a4cd">
+<img width="344" alt="Screenshot 2023-08-29 at 8 55 00 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/50db9185-d14c-4bb2-b065-4356c60e0e05">
+
+```swift
+
+// Basic
+
+TextField("Enter Text", text: $globalText)
+                    .clearTextFieldViewModifier(text: $globalText)
+                    .padding(5)
+                    .border(.black)
+                    .padding()
 
 
+// Customized
+
+TextField("Enter Text", text: $globalText)
+                    .clearTextFieldViewModifier(text: $globalText,
+                                                buttonType: .image,
+                                                buttonImage: "xmark", 
+                                                buttonText: "Delete",
+                                                foregroundColor: .red,
+                                                onClearHandler: {
+                        print("Cleared")
+                    })
+                    .padding(5)
+                    .border(.black)
+                    .padding()
+
+```
+<img width="342" alt="Screenshot 2023-08-29 at 8 58 28 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/c9daf7f0-7872-4f0c-a919-5fda67f3c147">
+<img width="343" alt="Screenshot 2023-08-29 at 9 11 34 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/77aa8512-467f-4d9e-9efd-f0446093e489">
+<img width="339" alt="Screenshot 2023-08-29 at 8 58 50 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/39577ab5-1a02-4791-bcd9-5c9d279ef780">
+
+```swift
+TextField("Enter Text", text: $globalText)
+                    .validationModifier(text: $globalText, showValidImage: isInputValid, showImage: $isBtnPressed)
+                    .padding(3)
+                    .border(.black)
+                    .padding([.horizontal, .top, .bottom])
+
+```
+<img width="345" alt="Screenshot 2023-08-29 at 9 00 53 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/3f9dd76b-30b5-4dbb-bfea-f26375d88a79">
+<img width="336" alt="Screenshot 2023-08-29 at 9 01 14 PM" src="https://github.com/samgusa/SwiftyTextField/assets/45985527/42c6d5f0-4d20-48e0-8941-7cef79a9bb22">
 
 
 
