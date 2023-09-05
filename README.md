@@ -1,6 +1,6 @@
 # SwiftyTextField
 
-![](https://img.shields.io/badge/license-MIT-green) ![](https://img.shields.io/badge/maintained%3F-Yes-green) ![](https://img.shields.io/badge/swift-5.4-green) ![](https://img.shields.io/badge/iOS-15-red) ![](https://img.shields.io/badge/release-v1.0.1-blue)
+![](https://img.shields.io/badge/license-MIT-green) ![](https://img.shields.io/badge/maintained%3F-Yes-green) ![](https://img.shields.io/badge/swift-5.4-green) ![](https://img.shields.io/badge/iOS-15-red)
 
 
 **SwiftyTextField** is a series of TextFields created in SwiftUI.
